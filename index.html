@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>smerrell_dotfiles by smerrell</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>smerrell_dotfiles</h1>
+        <h2>config files</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/smerrell/dotfiles/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/smerrell/dotfiles/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/smerrell/dotfiles" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>Instructions</h1>
+
+<p>Creating source files</p>
+
+<p>Any file which matches the shell glob _* will be linked into $HOME as a symlink with the first _ replaced with a .</p>
+
+<p>For example:</p>
+
+<pre><code>_bashrc
+</code></pre>
+
+<p>becomes</p>
+
+<pre><code>${HOME}/.bashrc
+</code></pre>
+
+<p>Installing source files</p>
+
+<p>It's as simple as running:</p>
+
+<pre><code>./install.sh
+</code></pre>
+
+<p>From this top-level directory.</p>
+
+<h2>Windows support</h2>
+
+<p>Works well with MSYS Git and the bash shell. Installation on windows will symlink files properly and handle Windows Gvim requiring a vimfiles directory instead of a .vim directory.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
